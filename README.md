@@ -46,7 +46,7 @@ This Zabbix template is intended for monitoring IPsec peers on Mikrotik devices 
 
 ## 📁 Файл шаблона
 
-Файл `zbx_export_templates.yaml` содержит экспорт шаблона Zabbix и должен быть импортирован в интерфейсе Zabbix.
+Файл `zabbix-mikrotik-ipsec-snmp.yaml` содержит экспорт шаблона Zabbix и должен быть импортирован в интерфейсе Zabbix.
 
 ---
 
