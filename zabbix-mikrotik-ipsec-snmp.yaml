@@ -72,6 +72,8 @@ zabbix_export:
             conditions:
               - macro: '{#IPSECIP}'
                 value: '^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$'
+              - macro: '{#IPSECIP1}'
+                value: '^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$'
           item_prototypes:
             - uuid: a4ec663221a144009b40a8ac3f7bbaf5
               name: 'IPSec Peer Bytes In {#IPSECIP}'
@@ -220,9 +222,6 @@ zabbix_export:
                 - '0'
                 - '{#IPSECIP1}'
                 - 1.3.6.1.4.1.14988.1.1.20.2.1.16
-                - '0'
-                - '{#IPSECP2HSTATE}'
-                - 1.3.6.1.4.1.14988.1.1.20.2.1.18
                 - '0'
             - type: DISCARD_UNCHANGED_HEARTBEAT
               parameters:
